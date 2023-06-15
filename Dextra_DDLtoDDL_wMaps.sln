@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dextra", "Dextra\Dextra.csproj", "{9104F2FF-CB3B-4495-9A66-A363479A5DB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9104F2FF-CB3B-4495-9A66-A363479A5DB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9104F2FF-CB3B-4495-9A66-A363479A5DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9104F2FF-CB3B-4495-9A66-A363479A5DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9104F2FF-CB3B-4495-9A66-A363479A5DB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1947ADB8-0E7B-4B6A-8A39-4BCD58AC92F2}
+	EndGlobalSection
+EndGlobal
