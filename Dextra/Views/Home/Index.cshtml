@@ -1,0 +1,42 @@
+﻿@model Location
+
+<iframe src="@ViewBag.location.Map" style="width:100%;height:100%;"></iframe>
+    
+@*Must remain in Index, even when moved to _Layout*@
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            getLocationByCompanyId(); // Call a function to get the location by company
+        })
+        $("#companyId").change(function () {
+            getLocationByCompanyId(); // Every time a company is change, the function is called
+        });
+        // Create the getLocationByCompanyId function
+        var getLocationByCompanyId = function () {
+            $.ajax({
+                url: '@Url.Action("GetLocationByCompanyId","Home")',  // url calls Json method and controller
+                type: 'GET',
+                data: {  // pass data from companyId
+                    companyId: $('#companyId').val(),  //companyId is the name we gave to the dropdown id="companyId"
+                },
+                // if everything is successful we will receive the Json response back
+                success: function (data) {
+                    // Remove cascading list, which add every time you select something new
+                    $('#locationId').find('option').remove()
+                    // Populate dropdown
+                    $(data).each(
+                        function (index, item) {
+                            $('#locationId').append('<option value="' + item.id + '">' + item.name +'</option>')
+
+                        }
+                        
+                    );
+                }
+            })
+        }
+
+    // Map
+
+
+    </script>
+}
